@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eeeeec;
+  font-family: Arial, sans-serif;
+}
+
+/* Calculator */
+.calculator {
+  width: 350px;
+  padding: 22px;
+  background: #f8f8f6;
+  border-radius: 28px;
+
+  /* Premium shadow */
+  box-shadow:
+    0 25px 45px rgba(0, 0, 0, 0.22),
+    0 8px 15px rgba(0, 0, 0, 0.12);
+
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* Screen */
+.screen {
+  width: 100%;
+  height: 90px;
+  border: none;
+  outline: none;
+  border-radius: 18px;
+
+  background: #e7e7e3;
+  color: #111;
+
+  font-size: 38px;
+  font-weight: 500;
+  text-align: right;
+
+  padding: 15px 18px;
+  margin-bottom: 20px;
+
+  box-shadow:
+    inset 0 3px 8px rgba(0, 0, 0, 0.10),
+    0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Buttons Area */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+/* All Buttons */
+.btn,
+.btn-equal,
+.btn-clear,
+.btn-remove {
+  height: 62px;
+  border: none;
+  border-radius: 17px;
+
+  font-size: 23px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.15s ease;
+
+  box-shadow:
+    0 5px 10px rgba(0, 0, 0, 0.12),
+    inset 0 -2px 0 rgba(0, 0, 0, 0.08);
+}
+
+/* Normal buttons */
+.btn-grey {
+  background: #dededb;
+  color: #181818;
+}
+
+/* Operators */
+.btn-yellow {
+  background: #c9c9c4;
+  color: #111;
+}
+
+/* Hover */
+.btn:hover,
+.btn-equal:hover,
+.btn-clear:hover,
+.btn-remove:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 15px rgba(0, 0, 0, 0.16),
+    inset 0 -2px 0 rgba(0, 0, 0, 0.08);
+}
+
+/* Click effect */
+.btn:active,
+.btn-equal:active,
+.btn-clear:active,
+.btn-remove:active {
+  transform: translateY(2px);
+
+  box-shadow:
+    0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* Equal button */
+.btn-equal {
+  background: #bcbcb7;
+  color: #000;
+}
+
+/* Clear */
+.btn-clear {
+  background: #d2d2ce;
+  color: #111;
+}
+
+/* Remove */
+.btn-remove {
+  background: #d2d2ce;
+  color: #111;
+  font-size: 28px !important;
+}
+
+/* Mobile */
+@media (max-width: 450px) {
+  .calculator {
+    width: 90%;
+    padding: 18px;
+  }
+
+  .screen {
+    height: 80px;
+    font-size: 32px;
+  }
+
+  .btn,
+  .btn-equal,
+  .btn-clear,
+  .btn-remove {
+    height: 58px;
+  }
+}

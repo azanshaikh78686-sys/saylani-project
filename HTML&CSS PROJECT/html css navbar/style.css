@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 16px;
+}
+:root{
+    --bodycolor :#6ad84e;
+    --bgcolor: #0B1120;
+    --textcolor:#38BDF8;
+}
+body{
+    background-color: var(--bgcolor);
+}
+header{
+    background-color: var(--bodycolor);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+}
+a{
+    color: var(--textcolor);
+font-size: 22px;
+padding: 10px;
+}

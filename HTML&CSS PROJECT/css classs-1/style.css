@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+}
+h1{
+    color: blue;
+}
+#desc-1 h1{
+    color: blueviolet;
+}
+span{
+    color: aquamarine;
+}
+.upper-1 h1{
+    width: 80px ;
+    color: blue;
+}
+h2{
+    background-color: brown;
+}
+p{
+    color: aliceblue;
+}
+.det-1 h2{
+    color: cadetblue;
+}
